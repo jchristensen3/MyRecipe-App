@@ -14,15 +14,17 @@
     <link href="/css/index.css" rel="stylesheet" type="text/css">
 
     <% for (let i = 0; i < recipes.length; i++) { %>
-        <a href="/recipes/<%=i%>"><p><%= recipes[i].name%></p></a>
+        <a href="/recipes/<%= recipes[i].id %>"><p><%= recipes[i].name%></p><img src=<%=recipes[i].img%> /></a>
         
-        <form action="/recipes/<%=i%>?_method=DELETE" method="POST">
+        <form action="/recipes/<%= recipes[i].id %>?_method=DELETE" method="POST">
             <input type="submit" value="Delete" />
         </form> <br>
   
-        <a href="/recipes/<%=i%>/edit"> <input type="submit" value="Edit your RECIPE!" /></a>
-
+        <a href="/recipes/<%= recipes[i].id %>/edit"> <input type="submit" value="Edit your RECIPE!" /></a><br><br>
+        
+        
     <% } %>
+    <a href="/users"><input type="submit" value="Log out"</a> 
      
 </body>
 </html>

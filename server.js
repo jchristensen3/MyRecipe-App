@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(methodOverride('_method'));
 app.use('/recipes', routes.recipes);
 app.use(express.static('public'));
+app.use('/users', routes.users);
 
 
 app.listen(3000, () => {

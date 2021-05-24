@@ -1,8 +1,9 @@
-const recipes = require('../models/recipes');
+const Recipe = require('../models').Recipe
 
 const index = (req, res) => {
-    res.render('index.ejs', {
-        recipes: recipes});
+    Recipe.findAll().then(allRecipes => {
+        res.render('index.ejs', {recipes: allRecipes});
+    })
 }
 
 const renderNew = (req, res) => {
@@ -10,32 +11,49 @@ const renderNew = (req, res) => {
 }
 
 const createRecipes =  (req, res) => {
-    recipes.push(req.body);
-    res.redirect('/recipes');
+    Recipe.create(req.body).then(newRecipe => {
+        res.redirect('/recipes');
+    }) 
 }
 
 const show = (req, res) => {
-    console.log(req.params.index);
-    res.render('show.ejs', {
-    recipe: recipes[req.params.index]
-})
+    Recipe.findByPk(req.params.index).then(foundRecipe => {
+        res.render('show.ejs', {
+            recipe: foundRecipe
+        }) 
+    })
 }
 
 const deleteRecipes = (req, res) => {
-    recipes.splice(req.params.index, 1);
-    res.redirect('/recipes');
+    Recipe.destroy({
+        where: {
+            id: req.params.index
+        }
+    })
+    .then(() => {
+        res.redirect('/recipes');
+    })
+    
 }
 
 const renderEdit = (req, res) => {
-    res.render('edit.ejs', {
-        recipe: recipes[req.params.index],
-        recipeIndex: req.params.index
+    Recipe.findByPk(req.params.index)
+    .then(foundRecipe => {
+        res.render('edit.ejs', {
+            recipe: foundRecipe
+        })
     })
 }
 
 const updateRecipes = (req, res) => {
-    recipes[req.params.index] = req.body;
-    res.redirect('/recipes');
+    Recipe.update(req.body, {
+        where: {id:req.params.index},
+        returning: true
+    })
+    .then(updatedRecipe => {
+        res.redirect('/recipes');
+    })
+    
 }
 
 module.exports = {

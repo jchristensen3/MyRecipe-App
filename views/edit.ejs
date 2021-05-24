@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1>Edit your RECIPE!</h1>
-    <form action="/recipes/<%=recipeIndex%>?_method=PUT" method="POST">
+    <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
+
+        <link href="/css/edit.css" rel="stylesheet" type="text/css">
+
         Name: <input type="text" name="name" value="<%=recipe.name%>" /><br><br>
         Image: <input type="text" name="img" value="<%=recipe.img%>" /><br><br>
-        Ingredients: <input type="text" name="ingredients" value="<%=recipe.ingredients%>" /></textarea><br><br>
-        Directions: <input type="test" name="directions" value="<%=recipe.directions%>" /></textarea><br><br>
+        Ingredients: <input value="<%=recipe.ingredients%>"  type="text" name="ingredients" /><br><br> 
+        Directions: <input type="text"  name="directions" value="<%=recipe.directions%>" /><br><br>
         Prep Time: <input type="text" name="time" value="<%=recipe.time%>" /><br><br>
         <input type="submit" value="Submit Changes" />
     </form>
+   
      
 </body>
 </html>
