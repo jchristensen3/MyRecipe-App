@@ -17,12 +17,22 @@ const createRecipes =  (req, res) => {
 }
 
 const show = (req, res) => {
-    Recipe.findByPk(req.params.index).then(foundRecipe => {
+    Recipe.findByPk(req.params.index) .then(foundRecipe => {
         res.render('show.ejs', {
             recipe: foundRecipe
         }) 
     })
 }
+// const show = (req, res) => {
+//     Recipe.findByPk(req.params.index, {
+//         include : [users]
+//     })
+//     .then(foundRecipe => {
+//         res.render('show.ejs', {
+//             recipe: foundRecipe
+//         });
+//     })
+// }
 
 const deleteRecipes = (req, res) => {
     Recipe.destroy({

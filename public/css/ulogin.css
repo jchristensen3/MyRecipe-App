@@ -1,0 +1,17 @@
+#container {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg-img {
+  background-image: url("https://images.pexels.com/photos/5652915/pexels-photo-5652915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+
+}

@@ -14,7 +14,9 @@
 
         Name: <input type="text" name="name" value="<%=recipe.name%>" /><br><br>
         Image: <input type="text" name="img" value="<%=recipe.img%>" /><br><br>
-        Ingredients: <input value="<%=recipe.ingredients%>"  type="text" name="ingredients" /><br><br> 
+        <div id="container" class="multiline">
+        Ingredients: <textarea  rows="4" cols="50" input value="<%=recipe.ingredients%>"  type="text" name="ingredients"></textarea><br><br>
+        </div>
         Directions: <input type="text"  name="directions" value="<%=recipe.directions%>" /><br><br>
         Prep Time: <input type="text" name="time" value="<%=recipe.time%>" /><br><br>
         <input type="submit" value="Submit Changes" />

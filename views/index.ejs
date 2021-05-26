@@ -13,7 +13,7 @@
     </nav>
     <link href="/css/index.css" rel="stylesheet" type="text/css">
 
-    <% for (let i = 0; i < recipes.length; i++) { %>
+    <% for (let i = 0; i<recipes.length; i++) { %>
         <a href="/recipes/<%= recipes[i].id %>"><p><%= recipes[i].name%></p><img src=<%=recipes[i].img%> /></a>
         
         <form action="/recipes/<%= recipes[i].id %>?_method=DELETE" method="POST">
@@ -21,7 +21,7 @@
         </form> <br>
   
         <a href="/recipes/<%= recipes[i].id %>/edit"> <input type="submit" value="Edit your RECIPE!" /></a><br><br>
-        
+
         
     <% } %>
     <a href="/users"><input type="submit" value="Log out"</a> 

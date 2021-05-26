@@ -14,11 +14,14 @@ module.exports = {
    
       directions: "1. In a small bowl, stir together mayonnaise, yogurt, and red wine vinegar. Season with salt and pepper.    2. In a large serving bowl, gently mix together eggs, bacon, avocado, blue cheese, and cherry tomatoes. Gradually fold in mayonnaise dressing, using only enough until ingredients are lightly coated, then season with salt and pepper. Garnish with chives and additional toppings.",
     
+      userId: 1
   }
 ], {})
   },
 
   down: async (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('Recipes', null, {});
+  	
     /**
      * Add commands to revert seed here.
      *
