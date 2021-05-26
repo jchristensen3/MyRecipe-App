@@ -5,14 +5,22 @@
         <title></title>
 
     </head>
+    <link rel="stylesheet" type="text/css" href="/css/usignup.css" />
     <body>
+        <div class="bg-img"></div>
+        <div class="container">
         <h1>Sign Up</h1>
 
         <form action='/users' method="POST">
-            Name: <input type="text" name="name" /><br> <br>
-            Username: <input type="text" name="username" /> <br> <br>
-            Password: <input type="password" name="password" /><br> <br>
+            <label for="name"><b>Name</b></label>
+                <input type="text" name="name" required placeholder="Enter Name" /><br> <br>
+           <label for="username"><b>Username</b></label>
+                <input type="text" name="username" required placeholder="Enter Username" /> <br> <br>
+            <label for="password"><b>Password</b></label>
+                <input type="password" name="password" required placeholder="Enter Password" /><br> <br>
             <input type="submit" value="SignUp"/>
         </form>
+        </div>
     </body>
 </html>
+

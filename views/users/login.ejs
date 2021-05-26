@@ -2,25 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/ulogin.css" />
+    
         <title></title>
     </head>
+    <link rel="stylesheet" type="text/css" href="/css/ulogin.css" />
     <body>
         <div class="bg-img"></div>
-        <div id="container">
-           
-        <h1>Login</h1>
-        <form action='/users/login' method="POST" class="container">
+            <div class="container">
+                <h1>Login</h1>    
+        <form action='/users/login' method="POST">
          
       <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
+      <input type="text" placeholder="Enter Username" name="username" required><br><br>
   
       <label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" required>
+      <input type="password" placeholder="Enter Password" name="password" required><br><br>
   
       <button type="submit" class="btn">Login</button>
         </form>
- </div>
+         </div>
+        
     </body>
 </html>
 

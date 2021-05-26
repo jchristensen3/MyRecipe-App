@@ -8,7 +8,7 @@ const routes = require('./routes');
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(methodOverride('_method'));
 app.use('/recipes', routes.recipes);
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 app.use('/users', routes.users);
 
 

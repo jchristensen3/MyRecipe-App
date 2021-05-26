@@ -1,17 +1,22 @@
-#container {
-  position: relative;
-}
 
-form {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .bg-img {
-  background-image: url("https://images.pexels.com/photos/5652915/pexels-photo-5652915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/15/21/00/tomatoes-3404263_960_720.jpg");
   background-size: cover;
 position: fixed;
   min-width: 100%;
   min-height: 100%;
+  opacity: 0.9;
 
+}
+.container {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(5, 5, 5);
+  position: relative;
+}
+
+h1 {
+  height: 100%;
+  margin-top: 0%;
+  padding-top: 100px;
 }
