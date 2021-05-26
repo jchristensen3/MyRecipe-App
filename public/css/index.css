@@ -5,17 +5,29 @@ h1 {
     padding-bottom: 30px;
     text-align: center;
   }
-
-body { 
-  background-image: url("https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
-  flex-direction: column;
-
+h2 {
+  text-align: center;
 }
 
+
 img {
+
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
   }
+
+body {
+  background-color: rgb(233, 226, 225);
+}
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+form {
+  align-items: center;
+}

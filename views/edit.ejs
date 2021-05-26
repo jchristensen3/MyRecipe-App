@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link href="/css/edit.css" rel="stylesheet" type="text/css">
+</head>>
 <body>
-    <h1>Edit your RECIPE!</h1>
-    <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
-
-        <link href="/css/edit.css" rel="stylesheet" type="text/css">
-
-        Name: <input type="text" name="name" value="<%=recipe.name%>" /><br><br>
-        Image: <input type="text" name="img" value="<%=recipe.img%>" /><br><br>
-        <div id="container" class="multiline">
-        Ingredients: <textarea  rows="4" cols="50" input value="<%=recipe.ingredients%>"  type="text" name="ingredients"></textarea><br><br>
-        </div>
-        Directions: <input type="text"  name="directions" value="<%=recipe.directions%>" /><br><br>
-        Prep Time: <input type="text" name="time" value="<%=recipe.time%>" /><br><br>
-        <input type="submit" value="Submit Changes" />
-    </form>
+    <div class="bg-img"></div>
    
+    <h1>Edit your RECIPE!</h1>
+    <div class="container">
+    <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
+        <label for="name"><b>Name:</b></label>
+            <input type="text" name="name" value="<%=recipe.name%>" />
+        <label for="img"><b>Image:</b></label>
+            <input type="text" name="img" value="<%=recipe.img%>" /><br>
+        <label for="ingredients"><b>Ingredients:</b></label>
+            <textarea  rows="4" cols="56" value="<%=recipe.ingredients%>" name="ingredients"></textarea><br>
+        <label for="directions"><b>Directions:</b></label>
+            <textarea  rows="4" cols="60" name="directions" value="<%=recipe.directions%>"></textarea><br>
+        <label for="time"><b>Prep Time:</b></label>
+            <input type="text" name="time" value="<%=recipe.time%>" /><br>
+            <input type="submit" value="Submit Changes" />
+    </form>
+</div>
      
 </body>
 </html>
-
