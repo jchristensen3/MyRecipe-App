@@ -7,25 +7,23 @@
     <title>Document</title>
     <link href="/css/edit.css" rel="stylesheet" type="text/css">
 </head>>
-<body>
-    <div class="bg-img"></div>
-   
-    <h1>Edit your RECIPE!</h1>
-    <div class="container">
-    <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
-        <label for="name"><b>Name:</b></label>
-            <input type="text" name="name" value="<%=recipe.name%>" />
-        <label for="img"><b>Image:</b></label>
-            <input type="text" name="img" value="<%=recipe.img%>" /><br>
-        <label for="ingredients"><b>Ingredients:</b></label>
-            <textarea  rows="4" cols="56" value="<%=recipe.ingredients%>" name="ingredients"></textarea><br>
-        <label for="directions"><b>Directions:</b></label>
-            <textarea  rows="4" cols="60" name="directions" value="<%=recipe.directions%>"></textarea><br>
-        <label for="time"><b>Prep Time:</b></label>
-            <input type="text" name="time" value="<%=recipe.time%>" /><br>
-            <input type="submit" value="Submit Changes" />
-    </form>
-</div>
-     
-</body>
+    <body>
+        <div class="bg-img"></div>
+            <h1>Edit your Recipe!</h1>
+        <div class="container">
+                <form action="/recipes/<%=recipe.id%>?_method=PUT" method="POST">
+                    <label for="name"><b>Name:</b></label>
+                        <input type="text" name="name" value="<%=recipe.name%>" />
+                    <label for="img"><b>Image:</b></label>
+                        <input type="text" name="img" value="<%=recipe.img%>" /><br>
+                    <label for="ingredients"><b>Ingredients:</b></label>
+                        <textarea  rows="4" cols="56" value="<%=recipe.ingredients%>" name="ingredients" placeholder="<%=recipe.ingredients%>"></textarea><br>
+                    <label for="directions"><b>Directions:</b></label>
+                        <textarea  rows="4" cols="60" name="directions" value="<%=recipe.directions%>"></textarea><br>
+                    <label for="time"><b>Prep Time:</b></label>
+                        <input type="text" name="time" value="<%=recipe.time%>" /><br>
+                        <input type="submit" value="Submit Changes" />
+                </form>
+        </div>    
+    </body>
 </html>

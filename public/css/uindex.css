@@ -2,12 +2,12 @@
 .bg-img {
   background-image: url("https://images.pexels.com/photos/4033296/pexels-photo-4033296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
-position: fixed;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   opacity: 0.9;
-
 }
+
 .container {
   text-align: center;
   font-size: 50px;
@@ -15,7 +15,6 @@ position: fixed;
 
 .topnav {
   overflow: hidden;
-  /* background-color: #333; */
 }
 
 .topnav a {

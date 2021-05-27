@@ -11,5 +11,4 @@ router.post('/login', ctrl.users.login);
 router.put('/profile/:index', ctrl.users.editProfile);
 router.delete('/:index', ctrl.users.deleteUsers);
 
-
 module.exports = router;

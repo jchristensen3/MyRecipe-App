@@ -23,16 +23,6 @@ const show = (req, res) => {
         }) 
     })
 }
-// const show = (req, res) => {
-//     Recipe.findByPk(req.params.index, {
-//         include : [users]
-//     })
-//     .then(foundRecipe => {
-//         res.render('show.ejs', {
-//             recipe: foundRecipe
-//         });
-//     })
-// }
 
 const deleteRecipes = (req, res) => {
     Recipe.destroy({
@@ -43,7 +33,6 @@ const deleteRecipes = (req, res) => {
     .then(() => {
         res.redirect('/recipes');
     })
-    
 }
 
 const renderEdit = (req, res) => {
@@ -62,8 +51,7 @@ const updateRecipes = (req, res) => {
     })
     .then(updatedRecipe => {
         res.redirect('/recipes');
-    })
-    
+    })  
 }
 
 module.exports = {
@@ -73,5 +61,5 @@ module.exports = {
     show,
     deleteRecipes,
     renderEdit,
-    updateRecipes,
+    updateRecipes
 }

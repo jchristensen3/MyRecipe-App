@@ -1,12 +1,12 @@
 .bg-img {
-    background-image: url("https://cdn.pixabay.com/photo/2017/10/22/20/42/table-2879213_960_720.jpg");
+    background-image: url("https://images.unsplash.com/photo-1617460183227-c015a1eef31a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80");
     background-size: cover;
     position: fixed;
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.9;      
+    opacity: 0.9;
+      
 }
-
 .container {
     text-align: center;
     font-size: 50px;
@@ -15,11 +15,12 @@
 }
       
 h1 {
+    margin-top: 0%;
     position: relative;
     font-size: 60px;
     text-align: center;
     height: 100%;
-    margin-top: 11%;
     color: rgb(5, 5, 5);
+    padding-top: 130px;
 }
       

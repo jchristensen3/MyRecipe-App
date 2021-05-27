@@ -1,12 +1,12 @@
 .bg-img {
     background-image: url("https://cdn.pixabay.com/photo/2014/04/09/15/11/vegetables-320131_960_720.jpg");
     background-size: cover;
-  position: fixed;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
     opacity: 0.9;
-  
   }
+
   .container {
     font-size: 40px;
     color: rgb(5, 5, 5);
@@ -21,6 +21,7 @@
     margin-top: 0%;
     color: rgb(5, 5, 5);
   }
+  
   h2 {
     position: relative;
     font-size: 30px;
