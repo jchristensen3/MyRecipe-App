@@ -8,7 +8,6 @@ This is a basic Recipe Book application for users to store what ever recipes tha
 
 ## Used technologies and concepts
 
-Click to see some examples of technologies and concepts I used in my project:
 - HTML
 - CSS
 - JavaScript
@@ -40,8 +39,8 @@ Currently implemented user stories:
 
 ## Wireframe
 
-[Wireframe1](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/1st%20page%20of%20WireFrame.png)
-[Wireframe2](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/2nd%20page%20of%20WireFrame.PNG)
+[Wireframe1](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/1st%20page%20of%20WireFrame.png),
+[Wireframe2](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/2nd%20page%20of%20WireFrame.PNG),
 [Wireframe3](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/3rd%20page%20of%20WireFrame.png)
 
 ## Datamodel
