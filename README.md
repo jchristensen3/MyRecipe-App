@@ -2,7 +2,7 @@
 
 ## 🥘 Recipe app 🍴
 
-https://github.com/jchristensen3/MyRecipe-App/blob/main/images/Capture.PNG
+![Screenshot](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/Capture.PNG)
 
 This is a basic Recipe Book application for users to store what ever recipes that they would like to. Users are able to create an account then they can add recipes they like and also manage those recipes by editing, or removing them. 
 
@@ -40,11 +40,10 @@ Currently implemented user stories:
 
 ## Wireframe
 
-[Wireframe](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/1st%20page%20of%20WireFrame.png),
-            (https://github.com/jchristensen3/MyRecipe-App/blob/main/images/2nd%20page%20of%20WireFrame.PNG),
-            (https://github.com/jchristensen3/MyRecipe-App/blob/main/images/3rd%20page%20of%20WireFrame.png)
+[Wireframe1](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/1st%20page%20of%20WireFrame.png)
+[Wireframe2](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/2nd%20page%20of%20WireFrame.PNG)
+[Wireframe3](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/3rd%20page%20of%20WireFrame.png)
 
 ## Datamodel
 
 [Datamodel](https://github.com/jchristensen3/MyRecipe-App/blob/main/images/ERD.png)
-
