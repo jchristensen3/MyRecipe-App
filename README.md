@@ -37,6 +37,16 @@ Currently implemented user stories:
 - Users can edit thier recipes.
 - Users can log out of the application. 
 
+## URLs
+
+- /users-Homepage
+- /users/signup-Sign Up Page
+- /users/profile-Welcome page
+- /users/login-Log in page
+- /recipes-All recipes page
+- /recipes/id/edit-Edit recipe page
+- /recipes/new- Add a new recipe page
+
 ## Future Goals
 
 -I want to add restricted access for users
