@@ -49,15 +49,15 @@ Currently implemented user stories:
 
 ## Future Goals
 
--I want to add restricted access for users
--I want to add password authentication
--I want to add more relationship models such as Days of the Week and catagories like Breakfast, lunch, Dinner, snacks etc. 
--I want to touch up my CSS in my index page. 
--I want to add an API for recipe ideas.
--I want to add a search option and organize things alphabetically. 
--I want to add nutrition facts and cook times. 
--I want to be able to auto generate a week of meals from the database for the user. 
--I want the user to be able to organize meals by calories. 
+- I want to add restricted access for users
+- I want to add password authentication
+- I want to add more relationship models such as Days of the Week and catagories like Breakfast, lunch, Dinner, snacks etc. 
+- I want to touch up my CSS in my index page. 
+- I want to add an API for recipe ideas.
+- I want to add a search option and organize things alphabetically. 
+- I want to add nutrition facts and cook times. 
+- I want to be able to auto generate a week of meals from the database for the user. 
+- I want the user to be able to organize meals by calories. 
 
 ## Wireframe
 
