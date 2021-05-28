@@ -7,21 +7,23 @@
     <title>Document</title>
     <link href="/css/index.css" rel="stylesheet" type="text/css">
 </head>
-    <body>
-        <h1>My Recipe Book<br>
-            <a href="/users"><input type="submit" value="Log out"></a> 
-        </h1>
-            <nav>
-                <h2><a href="/recipes/new">Add a new Recipe!</a></h2>
-            </nav>
-                <div class="container">
-                    <% for (let i = 0; i<recipes.length; i++) { %>
-                        <a href="/recipes/<%= recipes[i].id %>"><p><%= recipes[i].name%></p><img src=<%=recipes[i].img%> /></a>
-                        <a href="/recipes/<%= recipes[i].id %>/edit"> <input type="submit" value="Edit your Recipe!" /></a><br><br>
-                    <form action="/recipes/<%= recipes[i].id %>?_method=DELETE" method="POST">
-                        <input type="submit" value="Delete" />
-                    </form>    
-                    <% } %>
-                </div>
-    </body>
+<body>
+    <h1>My Recipe Book<br>
+    <a href="/users"><input type="submit" value="Log out"></a> 
+    </h1>
+    <nav>
+        <h2><a href="/recipes/new">Add a new Recipe!</a></h2><br><br>
+        
+    </nav>
+    <div class="container">
+    <% for (let i = 0; i<recipes.length; i++) { %><br>
+        <a href="/recipes/<%= recipes[i].id %>"><p><br><%= recipes[i].name%></p><img src=<%=recipes[i].img%> /></a><br><br>
+        <a href="/recipes/<%= recipes[i].id %>/edit"><input type="submit" value="Edit your Recipe!" /></a><br>
+        <form action="/recipes/<%= recipes[i].id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete" /><br>
+        </form>     
+    <% } %>
+</div> 
+     
+</body>
 </html>

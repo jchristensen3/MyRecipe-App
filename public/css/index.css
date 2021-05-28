@@ -6,28 +6,26 @@ h1 {
     text-align: center;
   }
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 
 img {
 
-    border: 1px solid #ddd;
+    
     border-radius: 4px;
     padding: 5px;
     width: 150px;
-  }
+}
 
 body {
-  background-color: rgb(255, 249, 194);
+     background-color: rgb(255, 249, 194);
 }
 
 .container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-}
-form {
-  align-items: center;
-}
+    -webkit-column-count: 5;
+    column-count: 5;
+    
+      }
+
+
